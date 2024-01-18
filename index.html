@@ -1,0 +1,331 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safehaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+
+        <nav>
+            <ul>
+                <li><a onclick="scrollToSection('one')">Home</a></li>
+                <li><a onclick="scrollToSection('two')">Mission</a></li>
+                <li><a onclick="scrollToSection('three')">History</a></li>
+                <li><a onclick="scrollToSection('four')">About</a></li>
+                <div class="service">
+                    <li><a onclick="scrollToSection('five')">Services</a></li>
+                </div>
+                <li><a onclick="scrollToSection('six')">Products</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+   <div class="script">
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function scrollToSection(sectionId) {
+      const targetElement = document.getElementById(sectionId);
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    }
+//------//
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+            const homeAnimationContainer = document.getElementById("one");
+            const aboutAnimationContainer = document.getElementById("mission-animation");
+            const img1AnimationContainer = document.getElementById("img1-animation");
+
+            function handleScroll() {
+                const aboutPosition = aboutAnimationContainer.getBoundingClientRect().top;
+                const img1Position = img1AnimationContainer.getBoundingClientRect().top;
+                const triggerPoint = window.innerHeight * 0.8;
+                const triggerPoint1 = window.innerHeight * 0.8;
+                
+
+                if (aboutPosition < triggerPoint) {
+                    aboutAnimationContainer.style.opacity = 1;
+                    aboutAnimationContainer.style.transform = "translateY(0)";
+                    window.removeEventListener("scroll", handleScroll);
+                }
+                // if (img1Position < triggerPoint1) {
+                //     img1AnimationContainer.style.opacity = 1;
+                //     img1AnimationContainer.style.transform = "translateY(0)";
+                //     window.removeEventListener("scroll", handleScroll);
+                // }
+                if (historyPosition < triggerPoint) {
+                    historyAnimationContainer.style.opacity = 1;
+                    historyAnimationContainer.style.transform = "translateY(0)";
+                    window.removeEventListener("scroll", handleScroll);
+                }
+
+
+
+
+
+            }
+
+            window.addEventListener("scroll", handleScroll);
+        });
+    </script>
+   </div>
+    
+    <div class="container">
+
+        <section id="one">
+            <div class="one-content">
+                <h1>Safe Haven Ministries International Inc.</h1>
+                <br><br>
+            <h3>
+                Psalm 91:4 Est. 2021
+            </h3>
+            <br>
+            <p>
+                Safe Haven is a virtual ministry that holds weekly prayer and bible study and monthly e-gatherings. 
+                <br>Safe Haven also does community outreach and services from America to Africa.
+            </p>
+            
+            </div>
+
+        </section>
+
+        <section id="two" class="page">
+            <div class="two-content">
+                <div class="animation-container" id="mission-animation">
+                    <h1>Mission</h1>
+                <p>
+                    The purpose of this ministry is to counsel, teach and bless people with the word of God. As well as to be a blessing to people with basic needs such as food and clothing from local to global.
+                </p>
+                <p>
+                    Our Mission is to allow souls the opportunity to find healing at the altar, hope through the word of the Lord, and help out of the sanctuary.
+                </p>
+                <p>
+                    Our Vision is to teach the word of God, train disciples, and tell all the truth of the gospel of Jesus Christ.
+                </p>    
+                </div>
+            </div>
+            <div class="img1" id="img1-animation">
+                <img src="people.png" alt="">
+            </div>
+        </section>
+        
+        <section id="three">
+            <div class="three-content" id="history-animation">
+                <h1>History</h1>
+                <br>
+                <p>
+                    On January 2nd of 2021 Daniella was called and confirmed to start a prayer gathering. The prayer gathering was to invite all to encounter the power of God to heal, give them hope, to help them recover and allow God to restore them after such a hard year filled with death and disease (the pandemic).
+                </p>
+                <br>
+                <p>
+                    After a few months of prayer on Saturdays the people were asking for more worship and more teaching. People where driving from across the state to be apart of the prayer gatherings and still are.
+                </p>
+                <p>
+                    Then Daniella made the careful decision to answer the call to build the Kingdom of God and expand Safe Haven's borders from local to global by going virtual.
+                </p>
+            </div>
+           
+        </section>
+
+        <section id="four">
+           <div class="four-content">
+            <h1>
+                About
+            </h1>
+            <p>
+                Daniella is the founder of Safe Haven Ministries.  On July 1st , 2016 Daniella and her daughter moved to Venice, FL from Long Island, NY. Daniella 33 at the time relinquished her position at Friendship Baptist Church Worldwide to answer the call to come too Florida to build the Kingdom of God.  Daniella was sent and confirmed by her congregation in NY and reaffirmed by several assemblies here in Florida.
+            </p>
+            <p>
+                Daniella has been in Florida for 5 years and since she has helped plant and build 3 ministries and 2 churches. She has traveled all over the state to preach the gospel and has held several community services to advance the kingdom, save souls and revolutionize the body of Christ.  For more information om Daniella you can visit <a href='https://www.daniellaameho.com/safe-haven'>daniellabivona.com</a> 
+            </p>
+           </div>
+           <div class="img2">
+            <img src="founder.png" alt="">
+           </div>
+        </section>
+
+        <section id="extra">
+            <div class="extra-content">
+                <h1>Get involved </h1><br>
+                <p>There is no way we can continue to build the kingdom without your help <br><br>
+                </p>
+                <p>
+                    1.
+                    Pray. You can become a prayer partner. It would consist of joining us once a week to pray on our conference line for the needs of the church and its members and the communities we are attached to, affiliated, and associated with. 
+                    <br><br>
+                </p>
+                <p>
+                    2.
+Bible Study. Date and Time to come... <br><br>
+                </p>
+                <p>
+                    3.
+Monthly Gatherings. Join us once a month for our International Family E-Gathering on the 4th Sunday of every month. Revival is here! 
+<br><br>
+                </p>
+                <p>
+                    4.
+Invest. God's vision can only be possible with the generosity and sacrifice of people like you. Pray and ask God if He would have you to partner financially toward the establishment and advancement of His work through Safe Haven Ministries Internationally. 
+
+</p>
+
+</div>
+</section>
+
+<section id="five">
+    <div class="five-content">
+        <h1></h1>
+    </div>
+    <div class="img3">
+        <img src="service.png" alt="">
+    </div>
+</section>
+
+        <section id="six">
+            <div class="six-content">
+                <h1>Products</h1>
+                <h3>Atarah</h3>
+                <p>
+                    Atarah means crown in Hebrew. The Atarah is a part of the Hebrew Tallit or known to Christians as the Prayer Shawl. The significance of the Atarah on the Tallit is that it is a reminder that we are blessed by God.
+                </p>
+                <p>
+                    According to the Rabbis, the reason the Atarah was put on the Tallit is to beautify the head. The Tallit is worn as a covering on the head and the head is known in the Hebrew culture as the most "esteemed" part of the body. <br><br> Many Rabbi's both current and past see the Atarah as an option you can use to beautify the Tallit with it on the collar or not.
+                    <br> For more information and to purchase email us or visit <a href="https://www.daniellaameho.com/atarah">daniellabivona.com/atarah</a>
+                </p>
+            </div>
+            
+        </section>
+            
+        <section id="seven">
+            <div class="seven-content">
+               <div class="column1">
+                <img src="atarah.png" alt="">
+               </div>
+               <div class="atarahs">
+                <div class="column1">
+                    <img src="atarah2.png" alt="">
+                   </div>
+                   <div class="column1">
+                    <img src="atarah3.png" alt="">
+                   </div>
+               </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-content">
+                <h1>Contact/Prayer Reqests</h1>
+            <p>To make an appointment with Daniella feel free to reach out via phone, text or email.<br>To schedule Daniella for an event please submit the form below.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+
+                    <form action="https://formsubmit.co/safehaven.pslam91@yahoo.com " method="POST">
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name*</label>
+                                <input type="name" name="name" placeholder="James Smith">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email*</label>
+                                <input type="email" name="email" placeholder="james.smith@gmail.com">
+                            </div>
+                        </div>
+
+                        <label>Message*</label>
+                        <textarea rows="5" name="msg" placeholder="Your Message"></textarea>
+                        
+                        <button type="submit">Send</button>
+
+                    </form>
+
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>safehaven.pslam91@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>941-479-0235</td>
+                        </tr>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+        <section id="eight">
+            <div class="eight-content">
+                <div class="column">
+                    <h2>Give</h2>
+                    <p>Honor the Lord with your possessions,
+                        And with the firstfruits of all your increase;
+                        10 So your barns will be filled with plenty,
+                        And your vats will overflow with new wine.
+                        </p>
+                </div>
+        
+                <div class="column">
+                    <h2>Proverbs 3:9-10 NKJV</h2>
+                    <p>Simple and secure. Give a single gift, or schedule recurring giving using your checking account, debit, or credit card. Click on the giving image and give.
+                        Thank you for your contribution
+                            </p>
+                </div>
+            </div>
+        </section>
+       
+        <div class="details">
+          
+                <center>
+                    <h3>Contact us!</h3>
+                <a href="https://www.facebook.com/profile.php?id=100010074820297"><i class="fa-brands fa-facebook"></i></a>
+                <i class="fa-brands fa-square-instagram"></i> 
+                <a href="https://www.instagram.com/daniellaameho?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                <p>Email: safehaven.pslam91@yahoo.com 
+                    <br>Phone: 941-479-0235
+                    <br>
+                    <br>
+                </p>
+                </center>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
