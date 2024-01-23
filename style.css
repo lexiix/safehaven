@@ -113,7 +113,7 @@ section {
 }
 
 #one {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@ section {
 }
 
 #two {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ section {
 }
 
 #three {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,7 +183,7 @@ section {
 
 
 #four {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,7 +205,7 @@ section {
 }
 
 #five {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,7 +224,7 @@ section {
 }
 
 #six {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,7 +247,7 @@ section {
 }
 
 .products {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,7 +255,7 @@ section {
 }
 
 #seven {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -273,7 +273,7 @@ section {
 }
 
 #eight {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -315,7 +315,7 @@ section {
 }
 
 #books {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +344,7 @@ section {
 }
 
 #extra {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,7 +365,7 @@ header.sticky ul li a {
     color: #ffd700;
 }
 #contact {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -473,6 +473,11 @@ tr td {
     body {
         
         font-size: 14px; /* Adjust font size for smaller screens */
+        background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)), url(backg.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-shadow: 1px 1px 4px black;
     }
 
     header {
